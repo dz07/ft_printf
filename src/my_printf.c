@@ -6,7 +6,7 @@
 /*   By: zdiab- <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 16:43:57 by zdiab-            #+#    #+#             */
-/*   Updated: 2018/11/29 15:34:43 by zdiab-           ###   ########.fr       */
+/*   Updated: 2018/11/29 16:30:45 by zdiab-           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -353,7 +353,7 @@ char **classified(char *str, va_list args, char **ptr)
 	{
 		k = 0;
 		if(t[i][k] == 'c')
-		{ptr[i] = (char*)malloc(1);ptr[i][0] = (char)va_arg(args, int);ptr[i][1] = '\0';}
+		{ptr[i] = (char*)malloc(2);ptr[i][0] = (char)va_arg(args, int);ptr[i][1] = '\0';}
 		else if(t[i][k] == 'p')
 		{
 			f = ft_strjoin(f, "0x");
