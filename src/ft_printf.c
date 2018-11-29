@@ -6,7 +6,7 @@
 /*   By: zdiab- <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 16:43:57 by zdiab-            #+#    #+#             */
-/*   Updated: 2018/11/29 16:30:45 by zdiab-           ###   ########.fr       */
+/*   Updated: 2018/11/29 16:45:04 by zdiab-           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,20 @@
 
 int flag(char *str, int i, char **ptr, int *j);
 char **sort_args(char *str);
+int			ft_atoi(const char *str);
+void		ft_putchar(char c);
+void		ft_putstr(const char *str);
+size_t		ft_strlen(const char *str);
+char		*ft_strjoin(char const *s1, char const *s2);
+int			ft_atoi_base(char *str, char *base);
+char		*ft_itoa_base(int value, char *base);
+void		*ft_memalloc(size_t size);
+void		ft_bzero(void *b, size_t n);
+char		*ft_strcpy(char *dest, const char *src);
+char		*ft_strcat(char *dest, const char *src);
+char		*ft_strdup(const char *src);
+int			ft_isupper(int c);
+char        *ft_itoa(long long int nbr);
 
 static void	append(char *str, int index, char c)
 {
