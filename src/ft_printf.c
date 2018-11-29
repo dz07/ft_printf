@@ -367,7 +367,7 @@ char **classified(char *str, va_list args, char **ptr)
 	{
 		k = 0;
 		if(t[i][k] == 'c')
-		{ptr[i] = (char*)malloc(2);ptr[i][0] = (char)va_arg(args, int);ptr[i][1] = '\0';}
+		{ptr[i] = (char*)malloc(sizeof(char) * 100);ptr[i][0] = (char)va_arg(args, int);ptr[i][1] = '\0';}
 		else if(t[i][k] == 'p')
 		{
 			f = ft_strjoin(f, "0x");
